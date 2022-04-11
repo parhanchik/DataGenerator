@@ -36,13 +36,18 @@ class dateGenerator():
 
 
     """
-    Get random int with the required number of digits
+    Get random int with the required number of digits as string format
         string:     format - string satisfying the following regular expression [0-9]*\.[0-9]*
                             where we use only first numb, because INT has no fractional part.
     """
     def randomInt(self, format):
-        precision = int(format.split('.')[0])
-        return random.randint(10**(precision-1), (10**precision)-1)
+        scale = int(format.split('.')[0])
+        precision = int(format.split('.')[1])
+        pow = scale - precision
+        if precision != 0:
+            return str(random.randint(10**(pow-1), (10**pow)-1)) + '.' + precision*'0'
+        else:
+            return str(random.randint(10 ** (pow - 1), (10 ** pow) - 1))
 
 
 
