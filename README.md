@@ -125,5 +125,5 @@
 
 Полученный csv файл:
 
-<img width="472" alt="image" src="https://user-images.githubusercontent.com/65617360/162840213-12b67bb2-e47d-4bab-8d1d-ea0f4da97746.png">
+<img width="585" alt="image" src="https://user-images.githubusercontent.com/65617360/162841273-5558a3af-5211-406f-8eee-587152afbb84.png">
 
